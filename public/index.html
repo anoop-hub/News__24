@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>News-24</title>
+  </head>
+  <body style="background-color: #18191c;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+<!--{this.state.articles.map((element)=>{
+  console.log(element);   
+})}
+
+
+ constructor(){
+    super()
+    console.log("this is my team")
+     this.state={
+      articles:this.articles
+     }
+  }
+
+
+
+
+  async componentDidMount(){
+    let url="https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=fa562c8ea3c44482a972a8a01e352261"
+    let data=await fetch(url)
+    let parsedData=await data.json()
+    this.setState({articles:parsedData.articles})
+    
+
+  }
+
+
+
+
+     <li className="nav-item">
+          <Link className="nav-link" style={{border:"4px solid red",borderRadius:"50%"}}  to="/about">Business</Link></li>
+        <li className="nav-item">
+          <Link className="nav-link"  to="/entertainment">Entertainment</Link></li>
+        <li className="nav-item">
+          <Link className="nav-link"  to="/general">General</Link></li>
+        <li className="nav-item">
+          <Link className="nav-link"  to="/health">Health</Link></li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/science">Science</Link></li>
+        <li className="nav-item">
+          <Link className="nav-link" Link to="/sports">Sports</Link></li>
+        <li className="nav-item">
+          <Link className="nav-link" Link to="/technology">Technology</Link></li>
+
+
+
+
+ 
+<Router>
+
+<Routes>
+      <Route exact path="/" element={<News key={"general"} pageSize={9} country={"in"}  category="general"  />} />
+      <Route exact path="/business" element={<News key={"business"}  pageSize={9} country={"in"} category="business"  />} />
+      <Route exact path="/entertainment" element={<News key={"entertainment"}  pageSize={9} country={"in"} category="entertainment" />} />
+      <Route exact path="/general" element={<News key={"general"}  pageSize={9} country={"in"} category="general"  />} />
+      <Route exact path="/health" element={<News key={"health"}  pageSize={9} country={"in"} category="health" />} />
+      <Route exact path="/science" element={<News key={"science"}  pageSize={9} country={"in"} category="science" />} />
+      <Route exact path="/sports" element={<News key={"sports"}  pageSize={9} country={"in"} category="sports" />} />
+      <Route exact path="/technology" element={<News key={"technology"}  pageSize={9} country={"in"} category="technology" />} />
+       
+      
+    </Routes> 
+
+      </Router>
+      
+
+-->
